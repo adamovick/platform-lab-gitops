@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: dotnet-api
-          image: ghcr.io/adamovick/k8s-dotnet-platform-lab:latest
+          image: ghcr.io/adamovick/kral-blog:v5
           ports:
             - containerPort: 8080
           resources:
