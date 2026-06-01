@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: platform-demo-api
-          image: ghcr.io/adamovick/platform-demo-api:latest
+          image: ghcr.io/adamovick/platform-demo-api:3237e194b3a75a1ddbb99b18d5a161d156b7ff7b
           ports:
             - containerPort: 8080
           readinessProbe:
