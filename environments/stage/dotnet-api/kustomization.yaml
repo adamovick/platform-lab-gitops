@@ -1,0 +1,6 @@
+resources:
+  - ../../../apps/dotnet-api/base
+
+namespace: stage
+
+namePrefix: stage-
