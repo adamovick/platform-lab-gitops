@@ -8,7 +8,7 @@ resources:
 
 images:
   - name: ghcr.io/adamovick/platform-demo-api
-    newTag: 3a7ec2d22d13de5c07d69b5a5809f723c79e81d8
+    newTag: 46a07cf6930112241af68be189ab30340a8cde62
 
 patches:
   - path: deployment-patch.yaml
