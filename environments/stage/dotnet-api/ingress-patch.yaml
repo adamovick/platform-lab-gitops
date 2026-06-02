@@ -1,0 +1,20 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: platform-demo-api
+spec:
+  rules:
+    - host: stage.platform-demo.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: stage-platform-demo-api
+                port:
+                  number: 80
+  tls:
+    - hosts:
+        - stage.platform-demo.local
+      secretName: platform-demo-tls

@@ -4,3 +4,7 @@ resources:
 namespace: prod
 
 namePrefix: prod-
+
+patches:
+  - path: deployment-patch.yaml
+  - path: ingress-patch.yaml

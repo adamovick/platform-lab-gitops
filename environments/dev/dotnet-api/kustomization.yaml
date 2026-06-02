@@ -5,3 +5,7 @@ namespace: dev
 
 resources:
   - ../../../apps/dotnet-api/base
+
+patches:
+  - path: deployment-patch.yaml
+  - path: ingress-patch.yaml
