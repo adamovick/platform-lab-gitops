@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: test
+namePrefix: test-
+
+resources:
+  - ../../../apps/dotnet-api/base
+
+images:
+  - name: ghcr.io/adamovick/platform-demo-api
+    newTag: 6a837691a87c492558a71439ab10ff3e42719fb8
+
+patches:
+  - path: deployment-patch.yaml
+  - path: ingress-patch.yaml
