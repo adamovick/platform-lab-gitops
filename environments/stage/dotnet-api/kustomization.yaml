@@ -7,7 +7,7 @@ namePrefix: stage-
 
 images:
   - name: ghcr.io/adamovick/platform-demo-api
-    newTag: 3a7ec2d22d13de5c07d69b5a5809f723c79e81d8
+    newTag: 6a837691a87c492558a71439ab10ff3e42719fb8
 
 patches:
   - path: deployment-patch.yaml
